@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha-Beta Pruning Simulator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <section class="encabezado-pricipal" >
+            <section class="encabezado principal" >
+ 
+                <section class="encabezado-logo">
+                    <a href="index.html">
+                      
+                        <h1 class="logo">
+                            Simulador de Minmax y Poda Alpha-Beta
+                        </h1>
+                    </a>
+                </section>
+                
+
+            </section>
+        </section>
+
+
+        <section class="encabezado-nav" >
+            <nav class="nav encabezado" >
+                <ul class="menu" >
+                    <li ><a href="#">EDITAR</a>
+                        <ul>
+                            <li><a href="#">Limpiar Valores</a></li>
+                            <li><a href="#">Eliminar Todo</a></li>
+                            <li><a href="#">Generar ejemplo</a></li>
+                        </ul>
+                      
+                    </li>
+                        
+                    <li ><a href="#">EJECUTAR</a>
+                        <ul>
+                        <li><a href="#">Minimax</a></li>
+                        <li><a href="#">Poda Alpha-Beta</a></li>
+                        </ul>
+                    </li>
+                    <li ><a href="#">AYUDA</a>
+                        <ul>
+                        <li><a href="#">Video</a></li>
+                        <li><a href="#">Manual técnico</a></li>
+                        <li><a href="#">Algoritmo</a></li>
+                        </ul>
+                    </li>
+    
+                </ul>
+
+            </nav>
+        </section>
+    </header>
+
+
+    <div id="app">
+        <h1>Alpha-Beta Pruning Simulator</h1>
+        <div id="tree-container"></div>
+        <button id="compute-button">Compute Alpha-Beta</button>
+    </div>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+
+
+    <footer class="footer">
+        <section class="footerContainer">
+            <section class="footerContainer">
+                <div class="socialIcons">
+                    <a href="#"><img src="{{ url_for('static', filename='img/github.svg') }}" alt="GitHub"></a>
+                    
+                    
+                </div>
+               
+               </section>
+
+       </section>
+       <div class="footerBottom">
+        <p>copyright &copy; 2024; Desarrollado por <span class="designer"> Jeanhela Nazate, Johan Romo, Cristhopher Villamarin </span></p>
+
+    </div>
+        
+    </footer>
+</body>
+
+</html>
